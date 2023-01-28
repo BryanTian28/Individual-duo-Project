@@ -6,5 +6,6 @@ const { usersController } = require("../controllers"); // Akan otomatis mengambi
 
 Router.post("/register", usersController.register);
 Router.get("/login", usersController.login);
+Router.post("/addLoan", usersController.addToLoanCart);
 
 module.exports = Router;

@@ -31,5 +31,6 @@ const PORT = 5004;
 const { usersRouter, busRouter } = require("./routers");
 
 app.use("/users", usersRouter);
+app.use("/admin", adminRouter);
 
 app.listen(PORT, () => console.log(`API Running on Port ${PORT}`));
